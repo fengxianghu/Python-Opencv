@@ -10,7 +10,7 @@ def get_image_info(image):
     print(pixel_data)
 
 def video_demo():
-    capture = cv.VideoCapture(0)
+    capture = cv.VideoCapture(0)# 0 或者是路径
     while(True):
         ret,frame = capture.read()
         frame = cv.flip(frame,1)
