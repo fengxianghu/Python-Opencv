@@ -12,6 +12,7 @@ def medien_blur_demo(image):
     cv.imshow("median_blurred_image",image)
 
 #lablace 算子的作用就是锐化，其实就是求了两次导数
+
 def custom_blur_demo(image):
     # kernel = np.ones((5,5),np.float32)/25
      kernel = np.array([[1,1,1],[1,1,1],[1,1,1]], np.float32)
@@ -20,6 +21,7 @@ def custom_blur_demo(image):
 
 print("--------------------Hi, Python------------------------------")
 src = cv.imread("D:\\Onedrive\\Bilder\\chen.jpg")
+
 #cv.namedWindow("input image", cv.WINDOW_AUTOSIZE)
 blur_demo(src)
 # 创建窗口的namedWindow default parameter为WINDOW_AUTOSIZE。窗口大小会自动调整以适应所显示的图像，但是不能更改大小
